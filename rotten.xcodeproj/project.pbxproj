@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4F73F1D719D7A35B006CE45D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F73F1D619D7A35B006CE45D /* AppDelegate.swift */; };
-		4F73F1D919D7A35B006CE45D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F73F1D819D7A35B006CE45D /* ViewController.swift */; };
 		4F73F1DC19D7A35B006CE45D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F73F1DA19D7A35B006CE45D /* Main.storyboard */; };
 		4F73F1DE19D7A35B006CE45D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F73F1DD19D7A35B006CE45D /* Images.xcassets */; };
 		4F73F1E119D7A35B006CE45D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F73F1DF19D7A35B006CE45D /* LaunchScreen.xib */; };
 		4F73F1ED19D7A35B006CE45D /* rottenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F73F1EC19D7A35B006CE45D /* rottenTests.swift */; };
+		4F73F1F719D7A43F006CE45D /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F73F1F619D7A43F006CE45D /* MoviesViewController.swift */; };
+		4F73F1F919D7B420006CE45D /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F73F1F819D7B420006CE45D /* MovieCell.swift */; };
+		DC908C83FBD85D9B7897E464 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC43F9A2CC6D7C085CCC6D7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +28,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9AF1EC30D47396964F521F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4F73F1D119D7A35B006CE45D /* rotten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rotten.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F73F1D519D7A35B006CE45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F73F1D619D7A35B006CE45D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F73F1D819D7A35B006CE45D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F73F1DB19D7A35B006CE45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F73F1DD19D7A35B006CE45D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4F73F1E019D7A35B006CE45D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4F73F1E619D7A35B006CE45D /* rottenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rottenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F73F1EB19D7A35B006CE45D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F73F1EC19D7A35B006CE45D /* rottenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rottenTests.swift; sourceTree = "<group>"; };
+		4F73F1F619D7A43F006CE45D /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		4F73F1F819D7B420006CE45D /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		4F73F22A19DA4B7D006CE45D /* rotten-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rotten-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE238C2C5870D74312081845 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FAC43F9A2CC6D7C085CCC6D7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC908C83FBD85D9B7897E464 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +64,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38F9BDC84319BB9AE79E558A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A9AF1EC30D47396964F521F /* Pods.debug.xcconfig */,
+				DE238C2C5870D74312081845 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4F73F1C819D7A35B006CE45D = {
 			isa = PBXGroup;
 			children = (
 				4F73F1D319D7A35B006CE45D /* rotten */,
 				4F73F1E919D7A35B006CE45D /* rottenTests */,
 				4F73F1D219D7A35B006CE45D /* Products */,
+				38F9BDC84319BB9AE79E558A /* Pods */,
+				9A940620CFA0526C770AFEE5 /* Frameworks */,
+				4F73F22A19DA4B7D006CE45D /* rotten-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				4F73F1D619D7A35B006CE45D /* AppDelegate.swift */,
-				4F73F1D819D7A35B006CE45D /* ViewController.swift */,
 				4F73F1DA19D7A35B006CE45D /* Main.storyboard */,
+				4F73F1F619D7A43F006CE45D /* MoviesViewController.swift */,
+				4F73F1F819D7B420006CE45D /* MovieCell.swift */,
 				4F73F1DD19D7A35B006CE45D /* Images.xcassets */,
 				4F73F1DF19D7A35B006CE45D /* LaunchScreen.xib */,
 				4F73F1D419D7A35B006CE45D /* Supporting Files */,
@@ -112,6 +133,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9A940620CFA0526C770AFEE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAC43F9A2CC6D7C085CCC6D7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F73F1F019D7A35B006CE45D /* Build configuration list for PBXNativeTarget "rotten" */;
 			buildPhases = (
+				EF3BFC8EE716C9EFAB77E8F0 /* Check Pods Manifest.lock */,
 				4F73F1CD19D7A35B006CE45D /* Sources */,
 				4F73F1CE19D7A35B006CE45D /* Frameworks */,
 				4F73F1CF19D7A35B006CE45D /* Resources */,
+				2EE27C93316C53F393A44C02 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +238,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2EE27C93316C53F393A44C02 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF3BFC8EE716C9EFAB77E8F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F73F1CD19D7A35B006CE45D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F73F1D919D7A35B006CE45D /* ViewController.swift in Sources */,
 				4F73F1D719D7A35B006CE45D /* AppDelegate.swift in Sources */,
+				4F73F1F719D7A43F006CE45D /* MoviesViewController.swift in Sources */,
+				4F73F1F919D7B420006CE45D /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,21 +399,28 @@
 		};
 		4F73F1F119D7A35B006CE45D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A9AF1EC30D47396964F521F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = rotten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rotten-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4F73F1F219D7A35B006CE45D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE238C2C5870D74312081845 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = rotten/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "rotten-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +477,7 @@
 				4F73F1F219D7A35B006CE45D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F73F1F319D7A35B006CE45D /* Build configuration list for PBXNativeTarget "rottenTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +486,7 @@
 				4F73F1F519D7A35B006CE45D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
